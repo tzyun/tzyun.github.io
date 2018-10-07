@@ -107,7 +107,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/React/" style="font-size: 10px;">React</a>
+						<a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
 					</div>
 				</section>
 				
@@ -171,6 +171,88 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-github_create_blog" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/10/07/github_create_blog/" class="article-date">
+  	<time datetime="2018-10-07T15:49:51.932Z" itemprop="datePublished">2018-10-07</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/07/github_create_blog/">Github+Hexo+yilia快速搭建博客</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">	
+      
+        <p>GitHub是一个面向开源及私有软件项目的托管平台，也是一个分布式版本控制系统，详情见百度百科。<br>Github Pages则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，但现在大多用来开发制作个人博客网站。<br>接下来就一步步按照我曾经的步骤来搭建个人博客。</p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><pre><code>Git客户端安装，以及相关Git操作，这部分请自行百度
+nodeJs，主要是用作本地服务器可以预览效果
+Hexo，是一个快速、简洁且高效的博客框架。还有一种Jekyll，网上说Hexo速度快，都试了一下，感觉Hexo相对美观和简单点。
+yilia，一个界面的模板而已，可以自行选择喜欢的，这里用的是** https://github.com/voidking/hexo-theme-yilia.git **    
+</code></pre><hr>
+<h2 id="Github配置"><a href="#Github配置" class="headerlink" title="Github配置"></a>Github配置</h2><pre><code>Git客户端配置，Github账号申请， SSH Key配置。
+创建一个仓库，命名为username.github.io（username 是你的账号名)
+
+![创建仓库](img/github博客创建/create_repo.png)
+
+建立两个branch，master用于发布的网页，另外一个blog用于Hexo网页文件，手动管理和编辑的是blog分支。
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/其他/">其他</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2018/10/07/github_create_blog/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
     <article id="post-hello-world2" class="article article-type-post" itemscope itemprop="blogPost">
   
