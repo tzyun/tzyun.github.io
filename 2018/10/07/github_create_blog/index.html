@@ -5,18 +5,20 @@
   
   <title>Github+Hexo+yilia快速搭建博客 | Yun&#39;s Blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="GitHub是一个面向开源及私有软件项目的托管平台，也是一个分布式版本控制系统，详情见百度百科。Github Pages则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，但现在大多用来开发制作个人博客网站。接下来就一步步按照我曾经的步骤来搭建个人博客。 准备Git客户端安装，以及相关Git操作，这部分请自行百度 nodeJs，主要是用作本地服务器可以">
+  <meta name="description" content="GitHub是一个面向开源及私有软件项目的托管平台，也是一个分布式版本控制系统，详情见百度百科。Github Pages则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，但现在大多用来开发制作个人博客网站。接下来就一步步按照我曾经的步骤来搭建个人博客。">
 <meta name="keywords" content="github,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Github+Hexo+yilia快速搭建博客">
 <meta property="og:url" content="http://yoursite.com/2018/10/07/github_create_blog/index.html">
 <meta property="og:site_name" content="Yun&#39;s Blogs">
-<meta property="og:description" content="GitHub是一个面向开源及私有软件项目的托管平台，也是一个分布式版本控制系统，详情见百度百科。Github Pages则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，但现在大多用来开发制作个人博客网站。接下来就一步步按照我曾经的步骤来搭建个人博客。 准备Git客户端安装，以及相关Git操作，这部分请自行百度 nodeJs，主要是用作本地服务器可以">
+<meta property="og:description" content="GitHub是一个面向开源及私有软件项目的托管平台，也是一个分布式版本控制系统，详情见百度百科。Github Pages则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，但现在大多用来开发制作个人博客网站。接下来就一步步按照我曾经的步骤来搭建个人博客。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-07T16:45:30.420Z">
+<meta property="og:image" content="http://yoursite.com/img/github_create_blog/create_repo.png">
+<meta property="og:updated_time" content="2018-10-07T17:52:23.982Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github+Hexo+yilia快速搭建博客">
-<meta name="twitter:description" content="GitHub是一个面向开源及私有软件项目的托管平台，也是一个分布式版本控制系统，详情见百度百科。Github Pages则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，但现在大多用来开发制作个人博客网站。接下来就一步步按照我曾经的步骤来搭建个人博客。 准备Git客户端安装，以及相关Git操作，这部分请自行百度 nodeJs，主要是用作本地服务器可以">
+<meta name="twitter:description" content="GitHub是一个面向开源及私有软件项目的托管平台，也是一个分布式版本控制系统，详情见百度百科。Github Pages则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，但现在大多用来开发制作个人博客网站。接下来就一步步按照我曾经的步骤来搭建个人博客。">
+<meta name="twitter:image" content="http://yoursite.com/img/github_create_blog/create_repo.png">
   
     <link rel="alternative" href="/atom.xml" title="Yun&#39;s Blogs" type="application/atom+xml">
   
@@ -112,7 +114,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+						<a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
 					</div>
 				</section>
 				
@@ -220,31 +222,29 @@
 		
 			<div id="toc" class="toc-article">
 			  <strong class="toc-title">文章目录</strong>
-			  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Github配置"><span class="toc-number">2.</span> <span class="toc-text">Github配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">2.1.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">2.2.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">2.3.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+			  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Github配置"><span class="toc-number">2.</span> <span class="toc-text">Github配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo环境配置"><span class="toc-number">3.</span> <span class="toc-text">Hexo环境配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo常见命令"><span class="toc-number">3.1.</span> <span class="toc-text">Hexo常见命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yilia模板"><span class="toc-number">4.</span> <span class="toc-text">yilia模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#发布到github"><span class="toc-number">5.</span> <span class="toc-text">发布到github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-number">6.</span> <span class="toc-text">参考文献</span></a></li></ol>
 			</div>
 		
 		
-        <p>GitHub是一个面向开源及私有软件项目的托管平台，也是一个分布式版本控制系统，详情见百度百科。<br>Github Pages则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，但现在大多用来开发制作个人博客网站。<br>接下来就一步步按照我曾经的步骤来搭建个人博客。</p>
-<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><pre><code>Git客户端安装，以及相关Git操作，这部分请自行百度
-nodeJs，主要是用作本地服务器可以预览效果
-Hexo，是一个快速、简洁且高效的博客框架。还有一种Jekyll，网上说Hexo速度快，都试了一下，感觉Hexo相对美观和简单点。
-yilia，一个界面的模板而已，可以自行选择喜欢的，这里用的是** https://github.com/voidking/hexo-theme-yilia.git **    
-</code></pre><hr>
-<h2 id="Github配置"><a href="#Github配置" class="headerlink" title="Github配置"></a>Github配置</h2><pre><code>Git客户端配置，Github账号申请， SSH Key配置。
-创建一个仓库，命名为username.github.io（username 是你的账号名)
-
-![创建仓库](img/github博客创建/create_repo.png)
-
-建立两个branch，master用于发布的网页，另外一个blog用于Hexo网页文件，手动管理和编辑的是blog分支。
-</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>GitHub是一个面向开源及私有软件项目的托管平台，也是一个分布式版本控制系统，详情见百度百科。<br>Github Pages则是github上的一项功能，可以放置网页文件到指定文件夹，然后给你一个专属域名用于展示一些项目，但现在大多用来开发制作个人博客网站。<br>接下来就一步步按照我曾经的步骤来搭建个人博客。<br><a id="more"></a></p>
+<h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>Git客户端安装，以及相关Git操作，这部分请自行百度。<br>nodeJs，主要是用作本地服务器可以预览效果。<br>Hexo，是一个快速、简洁且高效的博客框架。还有一种Jekyll，网上说Hexo速度快，都试了一下，感觉Hexo相对美观和简单点。<br>yilia，一个界面的模板而已，可以自行选择喜欢的，这里用的是<strong> <a href="https://github.com/voidking/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/voidking/hexo-theme-yilia.git</a> </strong>    。</p>
+<h2 id="Github配置"><a href="#Github配置" class="headerlink" title="Github配置"></a>Github配置</h2><p>Git客户端配置，Github账号申请， SSH Key配置。<br>创建一个仓库，命名为username.github.io（username 是你的账号名)</p>
+<p><img src="/img/github_create_blog/create_repo.png" alt="创建仓库" title="创建仓库"></p>
+<p>建立两个branch，master用于发布的网页，另外一个blog用于Hexo网页文件，手动管理和编辑的是blog分支，在该repo的setting设置GitHub Pages中为master branch。</p>
+<h2 id="Hexo环境配置"><a href="#Hexo环境配置" class="headerlink" title="Hexo环境配置"></a>Hexo环境配置</h2><p>安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">nodejs</a><br>将上面创建的repo clone到本地，打开Git Bash。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Hexo 的安装</span></span><br><span class="line">$ npm install hexo-cli -g</span><br><span class="line"><span class="comment">#查看版本，确认是否安装成功</span></span><br><span class="line">$ hexo -version </span><br><span class="line"><span class="comment">#建站</span></span><br><span class="line">$ hexo init</span><br><span class="line"><span class="comment">#依次输入git --version,node -v,npm -v,hexo version，依次检测 Git node npm 以及 hexo 的版本</span></span><br><span class="line">$ git --version,node -v,npm -v,hexo version</span><br><span class="line"><span class="comment">#生成静态页面（markdown文件转化为html文件）</span></span><br><span class="line">$ hexo generate</span><br><span class="line"><span class="comment">#网站预览（默认的主题风格landscape, http://localhost:4000/)</span></span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<h3 id="Hexo常见命令"><a href="#Hexo常见命令" class="headerlink" title="Hexo常见命令"></a>Hexo常见命令</h3><p>常见命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"postName"</span> <span class="comment">#新建文章</span></span><br><span class="line">hexo new page <span class="string">"pageName"</span> <span class="comment">#新建页面</span></span><br><span class="line">hexo generate <span class="comment">#生成静态页面至public目录</span></span><br><span class="line">hexo server <span class="comment">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></span><br><span class="line">hexo deploy <span class="comment">#部署到GitHub</span></span><br><span class="line">hexo <span class="built_in">help</span>  <span class="comment"># 查看帮助</span></span><br><span class="line">hexo version  <span class="comment">#查看Hexo的版本</span></span><br></pre></td></tr></table></figure></p>
+<p>缩写<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>组合<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s -g <span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g <span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="yilia模板"><a href="#yilia模板" class="headerlink" title="yilia模板"></a>yilia模板</h2><p>模板下载,hexo的模板有很多，可以自己选择一款<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#进入themes目录，下载yilia主题</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/voidking/hexo-theme-yilia.git yilia</span><br></pre></td></tr></table></figure></p>
+<p>配置文件修改， 主题的优化参考<strong> <a href="https://www.voidking.com/2015/05/31/deve-hexo-theme-optimize/" target="_blank" rel="noopener">https://www.voidking.com/2015/05/31/deve-hexo-theme-optimize/</a> </strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#进入usename.github.io下面的_config.yml修改，主要是下面这一条</span></span><br><span class="line">theme: yilia</span><br></pre></td></tr></table></figure></p>
+<p>现在可以在本都预览到yilia样式的博客了。</p>
+<h2 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h2><p>首先是将该项目同步到github的blog分支，普通的git操作。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git pull origin blog</span><br><span class="line">git add .</span><br><span class="line">git commit -am <span class="string">" "</span></span><br><span class="line">git push origin blog</span><br></pre></td></tr></table></figure></p>
+<p>然后是将博客生成静态页面deploy到github的master分支。<br>再次之前，首先配置_config.yml中有关deploy的部分，修改为如下所示。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  <span class="comment">#对应仓库的SSH地址（可以在GitHub对应的仓库中复制）</span></span><br><span class="line">  repo: git@github.com:usename/usename.github.io.git </span><br><span class="line">  <span class="comment">#（分支：User Pages为master，Project Pages为blog分支）</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>配置完成后保存，然后鼠标右键单击你的项目文件夹开启git bash，输入npm install hexo-deployer-git –save安装相关插件。<br>用hexo deploy命令发布生成后的HTML代码到 master 分支上。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br><span class="line"><span class="comment">#或者用组合指令</span></span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></p>
+<p>日常编写的博客在source下面的_posts文件夹下面，用markdown格式编写，然后预览后没问题就上传，项目上传到blog分支，静态网页在master分支。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="https://www.voidking.com/2015/05/31/deve-hexo-theme-optimize/" target="_blank" rel="noopener">hexo主题优化</a></p>
+<p><a href="https://www.jianshu.com/p/7b5702d3f072" target="_blank" rel="noopener">GitHub+Hexo搭建博客</a></p>
+<p><a href="https://www.jianshu.com/p/e6662ca7e283" target="_blank" rel="noopener">github+hexo 搭建属于自己的博客网站</a></p>
 
       
     </div>
@@ -252,16 +252,6 @@ yilia，一个界面的模板而已，可以自行选择喜欢的，这里用的
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2018/10/07/hello-world2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
   
 </article>
 
